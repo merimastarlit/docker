@@ -1,6 +1,6 @@
-FROM alpine:latest
+FROM alpine:3.15.11
 RUN apk update -y
-RUN apk add nginx -y
+RUN apk --no-cache add nginx=1.25.3 -y
 ENV NAME = Azim
 ENV AGE = 33
 COPY index.html .
