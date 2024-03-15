@@ -5,7 +5,7 @@ ENV NAME = Azim
 ENV AGE = 33
 COPY index.html .
 VOLUME /opt
-WORKDIR /usr/share/nginx/
+WORKDIR /usr/share/
 COPY index.html /usr/share/nginx/
 # COPY team1.png /usr/share/nginx/
 CMD ["nginx", "-g", "daemon off"]
